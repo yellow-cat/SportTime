@@ -24,6 +24,16 @@
 		F01375FD1A50F2B600C683A8 /* WorkoutDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01375FB1A50F2B600C683A8 /* WorkoutDetailsScreen.swift */; };
 		F01375FF1A50F2C600C683A8 /* WorkoutsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01375FE1A50F2C600C683A8 /* WorkoutsScreen.swift */; };
 		F01376001A50F2C600C683A8 /* WorkoutsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01375FE1A50F2C600C683A8 /* WorkoutsScreen.swift */; };
+		F0ABFCFC1A52453D0032F879 /* StepTemplatesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABFCFB1A52453D0032F879 /* StepTemplatesScreen.swift */; };
+		F0ABFCFD1A52453D0032F879 /* StepTemplatesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABFCFB1A52453D0032F879 /* StepTemplatesScreen.swift */; };
+		F0ABFCFF1A52454D0032F879 /* NewWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABFCFE1A52454D0032F879 /* NewWorkoutScreen.swift */; };
+		F0ABFD001A52454D0032F879 /* NewWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABFCFE1A52454D0032F879 /* NewWorkoutScreen.swift */; };
+		F0BA14F01A64D28C0068FE5D /* WorkoutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA14EF1A64D28C0068FE5D /* WorkoutsService.swift */; };
+		F0BA14F11A64D28C0068FE5D /* WorkoutsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA14EF1A64D28C0068FE5D /* WorkoutsService.swift */; };
+		F0BA14F31A64D3650068FE5D /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA14F21A64D3650068FE5D /* Workout.swift */; };
+		F0BA14F41A64D3650068FE5D /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA14F21A64D3650068FE5D /* Workout.swift */; };
+		F0BA14F61A64D37D0068FE5D /* WorkoutStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA14F51A64D37D0068FE5D /* WorkoutStep.swift */; };
+		F0BA14F71A64D37D0068FE5D /* WorkoutStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA14F51A64D37D0068FE5D /* WorkoutStep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,11 @@
 		F01375F81A50F2A300C683A8 /* NewStepScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewStepScreen.swift; sourceTree = "<group>"; };
 		F01375FB1A50F2B600C683A8 /* WorkoutDetailsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsScreen.swift; sourceTree = "<group>"; };
 		F01375FE1A50F2C600C683A8 /* WorkoutsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsScreen.swift; sourceTree = "<group>"; };
+		F0ABFCFB1A52453D0032F879 /* StepTemplatesScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepTemplatesScreen.swift; sourceTree = "<group>"; };
+		F0ABFCFE1A52454D0032F879 /* NewWorkoutScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWorkoutScreen.swift; sourceTree = "<group>"; };
+		F0BA14EF1A64D28C0068FE5D /* WorkoutsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsService.swift; sourceTree = "<group>"; };
+		F0BA14F21A64D3650068FE5D /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		F0BA14F51A64D37D0068FE5D /* WorkoutStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutStep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F01375D61A4CA3A500C683A8 /* main */,
-				F01375DA1A4CA3A500C683A8 /* managers */,
+				F01375DA1A4CA3A500C683A8 /* model */,
 				F01375DB1A4CA3A500C683A8 /* ui */,
 			);
 			path = src;
@@ -118,11 +133,12 @@
 			path = main;
 			sourceTree = "<group>";
 		};
-		F01375DA1A4CA3A500C683A8 /* managers */ = {
+		F01375DA1A4CA3A500C683A8 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				F0BA14ED1A64D01A0068FE5D /* WorkoutsService */,
 			);
-			path = managers;
+			path = model;
 			sourceTree = "<group>";
 		};
 		F01375DB1A4CA3A500C683A8 /* ui */ = {
@@ -145,6 +161,8 @@
 		F01375F01A50F16B00C683A8 /* screen */ = {
 			isa = PBXGroup;
 			children = (
+				F0ABFCF41A5244620032F879 /* StepTemplatesScreen */,
+				F0ABFCF01A52437F0032F879 /* NewWorkoutScreen */,
 				F01375F41A50F19E00C683A8 /* BaseScreen */,
 				F01375F11A50F16B00C683A8 /* NewStepScreen */,
 				F01375F21A50F16B00C683A8 /* WorkoutDetailsScreen */,
@@ -183,6 +201,40 @@
 				F01375F51A50F25D00C683A8 /* BaseScreen.swift */,
 			);
 			path = BaseScreen;
+			sourceTree = "<group>";
+		};
+		F0ABFCF01A52437F0032F879 /* NewWorkoutScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F0ABFCFE1A52454D0032F879 /* NewWorkoutScreen.swift */,
+			);
+			path = NewWorkoutScreen;
+			sourceTree = "<group>";
+		};
+		F0ABFCF41A5244620032F879 /* StepTemplatesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F0ABFCFB1A52453D0032F879 /* StepTemplatesScreen.swift */,
+			);
+			path = StepTemplatesScreen;
+			sourceTree = "<group>";
+		};
+		F0BA14ED1A64D01A0068FE5D /* WorkoutsService */ = {
+			isa = PBXGroup;
+			children = (
+				F0BA14EF1A64D28C0068FE5D /* WorkoutsService.swift */,
+				F0BA14EE1A64D1EF0068FE5D /* DTO */,
+			);
+			path = WorkoutsService;
+			sourceTree = "<group>";
+		};
+		F0BA14EE1A64D1EF0068FE5D /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				F0BA14F21A64D3650068FE5D /* Workout.swift */,
+				F0BA14F51A64D37D0068FE5D /* WorkoutStep.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +341,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01375FF1A50F2C600C683A8 /* WorkoutsScreen.swift in Sources */,
+				F0BA14F61A64D37D0068FE5D /* WorkoutStep.swift in Sources */,
 				F01375F61A50F25D00C683A8 /* BaseScreen.swift in Sources */,
+				F0ABFCFF1A52454D0032F879 /* NewWorkoutScreen.swift in Sources */,
 				F01375F91A50F2A300C683A8 /* NewStepScreen.swift in Sources */,
 				F01375FC1A50F2B600C683A8 /* WorkoutDetailsScreen.swift in Sources */,
+				F0BA14F31A64D3650068FE5D /* Workout.swift in Sources */,
 				F01375E41A4CA3A500C683A8 /* AppDelegate.swift in Sources */,
+				F0ABFCFC1A52453D0032F879 /* StepTemplatesScreen.swift in Sources */,
+				F0BA14F01A64D28C0068FE5D /* WorkoutsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +360,14 @@
 				F01375FA1A50F2A300C683A8 /* NewStepScreen.swift in Sources */,
 				F01376001A50F2C600C683A8 /* WorkoutsScreen.swift in Sources */,
 				F01375FD1A50F2B600C683A8 /* WorkoutDetailsScreen.swift in Sources */,
+				F0BA14F41A64D3650068FE5D /* Workout.swift in Sources */,
 				F01375E51A4CA3A500C683A8 /* AppDelegate.swift in Sources */,
 				F01375EF1A4CA3A500C683A8 /* SportTimeTests.swift in Sources */,
 				F01375F71A50F25D00C683A8 /* BaseScreen.swift in Sources */,
+				F0ABFD001A52454D0032F879 /* NewWorkoutScreen.swift in Sources */,
+				F0BA14F71A64D37D0068FE5D /* WorkoutStep.swift in Sources */,
+				F0BA14F11A64D28C0068FE5D /* WorkoutsService.swift in Sources */,
+				F0ABFCFD1A52453D0032F879 /* StepTemplatesScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,9 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladimir Popko (56SA7L89YB)";
 				INFOPLIST_FILE = res/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c23d2a77-6602-42bd-8b45-3935b3f9dadf";
 			};
 			name = Debug;
 		};
@@ -411,9 +475,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladimir Popko (56SA7L89YB)";
 				INFOPLIST_FILE = res/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c23d2a77-6602-42bd-8b45-3935b3f9dadf";
 			};
 			name = Release;
 		};
